@@ -17,10 +17,7 @@ connectCloudinary();
 // middleware
 app.use(express.json());
 app.use(
-  cors({
-    origin: "https://doctorappoint-frontend-bfcw.vercel.app/",
-    credentials: true,
-  })
+  cors()
 );
 
 // api endpoints
